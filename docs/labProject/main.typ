@@ -56,7 +56,8 @@
 
 = Primary section
 
-#lorem(75)
+
+#lorem(175)
 
 == Secondary section
 
