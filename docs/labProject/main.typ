@@ -10,7 +10,7 @@
     ("Gabriel Maia Miguel", "Entusiasta de desenvolvimento web e software livre, estudante do Instituto Federal."),
     (
       "Samuel Oliveira Lopes",
-      "Interessado em sistemas distribuídos e segurança digital, estudante do Instituto Federal.",
+      "Interessado em desenvolvimento de aplicações e jogos eletronicos, estudante do Instituto Federal.",
     ),
   ),
   lang-foreign: "pt",
