@@ -15,6 +15,7 @@ This repository contains a research project on **Software-Defined Networking (SD
 - `report/` → SDN Documment.
 
 ## 👨‍💻 Authors
+[Fernanda M.](https://github.com/Sunref), [Gabriel M.](https://github.com/gm64x) and [Samuel O.](https://github.com/Samuskox).
 
 ---
 ✍️ **Topic:** Software-Defined Networking (SDN)

@@ -21,3 +21,4 @@ This project aims to install and configure a **Linux server** (or BSD-based syst
 - Open Source Web Application: **(e.g., WordPress, Moodle, Odoo, etc.)**
 
 ## 👨‍💻 Team Members
+[Fernanda M.](https://github.com/Sunref), [Gabriel M.](https://github.com/gm64x) and [Samuel O.](https://github.com/Samuskox).
