@@ -1,4 +1,88 @@
-\chapter{Metodologia}
-\label{cap:metodologia}
+\chapter{Pesquisa}
+\label{cap:pesquisa}
 
-\lipsum[4]
+\section{O que é a SND?}
+Nos últimos anos com o crescimento de tablets, smartphones e outros dispositivos de transmissão multimídia
+surgiu a necessidade de controle e operação de rede, essencial para suprir as demandas desses sistemas.
+Portanto, nada mais é que uma arquitetura de redes entre computadores, visando gerenciar serviços de rede
+utilizando de softwares em vez de dispositivos especializados para esse tipo de controle.
+
+Sendo um sistema centralizado, é capaz de reservar ou preparar recursos para que a aplicação não tenha
+obstáculos técnicos de hardware, possuíndo monitoramento inteligente que é feito para ser adaptável automaticamente
+de acordo com o estado da rede, digitalizando a mesma.
+
+A fim e lidar com melhores aplicações em nuvem, é capaz de automatizar, escalar e otimizar redes redes publicas e privadas
+de serviços, além de banco de dados. Escalável com mudanças contínuas pelas quais serviços de operadoras e provedores de
+internet não conseguem acompanhar \cite{stefanini_performance2025}.
+Alguns exemplos de SDN incluem a OpenDaylight\footnote{Disponível em: https://www.opendaylight.org/},
+ONUS\footnote{Disponível em: https://opennetworking.org/onos/}, Ryu\footnote{Disponível em: https://ryu-sdn.org/},
+VMware NSX\footnote{Disponível em: https://www.vmware.com/}
+
+\section{Como Funciona}
+A SDN é formada por componentes que podem ou não estar estarem localizadas na mesma área física.
+A fim de eliminar funções de de roteamento e encaminhamento de pacotes, a SDN implementa controladores
+e os coloca acima de hardwares de rede na nuvem ou localmente, permitindo gerenciamento de rede
+diretamente \cite{ibm_sdn}.
+
+Os componentes que compõem uma SDN consistem em:
+\begin{itemize}
+	\item \textbf{Aplicações:} São as encarregadas por transmitir informações ou solicitações de disponibilidadealocação
+	de rede. Sendo composta por dois tipos de interface de programação de aplicações (API), é notável citar
+	\textit{Southbound} e \textit{Northbound}. Os controladores podem programar e configurar dispositivos de rede nessa
+	API (\textit{Southbound}), recuperando informações sobre estados e topologia, recebendo notificações sobre congestionamento de pacotes
+	e falhas de link. Já a \textit{Northbound} executa as mesmas funções que a API anterior, com diferença em viabilizar automatização de tarefas
+	de gerenciamento de redes, facilitar a integração de sistemas em nuvem e outros tipos de aplicações.
+	\item \textbf{Controladores:} Responsável por implementar funções de controle de redes e coordenar a comunicação com aplicações determinando
+	o tráfego de pacotes de dados, os controladores oferecem uma perspectiva mais centralizada da rede, armazenando informações sobre o estado da
+	mesma e toma decisões de como gerenciar dispositivos de rede conforme suas politicas.
+	\item \textbf{Dispositivos de Rede:} São \textit{switches}, roteadores e pontos de acesso que fazem o fluxo de pacotes e recebem as instruções dos controladores e podem oferecer suporte a funcionalidades, como encaminhamento baseado em fluxo, qualidade de serviço e engenharia de tráfego. Nas SDN esses dispositivos podem ser simplificados e padronizados.
+	\item \textbf{Sistema MANO\footnote{Management and Orchestration}:} MANO, ou gerenciamento de orquestração, interage com o controlador de SDN por meio da API \textit{Northbound}
+	automatizando a utilização de recursos para rede e garantindo o autodesempenho e disponibilidade de serviços.
+\end{itemize}
+\cite{redhat_sdn}
+
+\section{Tipos}
+Existem quatro tipos de SDN que são considerados os principais. São eles:
+
+\begin{itemize}
+	\item \textbf{SDN aberta:} Os protocolos públicos são usados como controle de dispositivos tanto físicos quanto virtuais, e são
+	responsáveis pelo roteamento dos pacotes de dados.
+	\item \textbf{SDN de API:} Nesses casos, geralmente a \textit{Southbound} fica responsável pela organização e controle do fluxo para
+	cada dispositivo.
+	\item \textbf{Modelo de sobreposição:} Uma rede virtual acima do hardware físico oferecendo túneis que estabelecem canais de comunicação
+	com centro de processamento de dados (CPD).
+	\item \textbf{Modelo híbrido:} Combina as SDNs com redes tradicionais, atribuindo o protocolo certo para cada trafego. Frequentemente usada como complemento as SDNs originais.
+\end{itemize}
+\cite{ibm_sdn}
+
+\section{Vantagens e Desvantagens}
+As SDNs centralizam o controle e gerenciamento de rede, isso oferece vantagens que outras abordagens de rede não possuem.
+Podemos citar:
+
+\subsection{Agilidade e Flexibilidade}
+Permite o balanceamento de fluxo de tráfego de acordo com a necessidade e do uso, reduzindo latência, aumentando a eficiência da rede.
+As operadoras de rede também tem mais controle sobre a mesma, podendo alterar suas configurações, garantir recursos e expandir sua capacidade
+\cite{ibm_sdn}.
+
+\subsection{Redução de Custos}
+Como as SDNs mantém sempre um tráfego contínuo, mesmo sendo um alto investimento a se fazer, gera ao departamento de TI (Tecnologia
+da Informação) um alívio, reduzindo custos e melhorando a eficiência de serviços ao consumidor final \cite{stefanini_performance2025}.
+
+\subsection{Controle}
+Permite aos administradores que definam suas políticas a partir de um local central para controlar na rede os acessos e suas medidas
+de seguranças. Sendo aplicável em nuvem publica, híbrida, privada e multinuvem \cite{ibm_sdn, stefanini_performance2025}.
+
+\subsection{Simplicidade}
+Podendo se basear em um único protocolo de comunicação com uma ambla variedade de dispositivos de hardware, oferecendo flexibilidade na escolha de
+dispositivos de rede, gerando simplicidade \cite{ibm_sdn}.
+
+\subsection{Modernização de Telecomuniçaões}
+Combinado à maquinas virtuais e virtualização de redes, permite que as operadoras forneçam separação de rede e controle distinto aos clientes.
+Auxilia os operadores a melhorar sua escalabilidade e fornecer largura de banda sob demanda ao clientes\cite{ibm_sdn}.
+
+Porém, ainda é sucetível a erros e problemas, sendo o mais comum a ser citado o:
+
+\subsection{Risco de Centralização}
+Por ser um sistema centralizado, há um único potencial ponto de falha vulnerável, pois, como as SDNs induzem a criação de novos pontos de rede,
+a mesma fica sucetível a vulnerabilidades e ataques cibernéticos. Algumas SDNs também são de código aberto, o que facilita a implementação de
+código malicioso \cite{ibm_sdn, ufrj_sdn_2018}.

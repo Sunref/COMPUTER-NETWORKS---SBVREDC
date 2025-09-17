@@ -3,7 +3,7 @@
 	12pt,				% tamanho da fonte
 	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
 	oneside,			% para impressão em recto e verso. Oposto a oneside
-	a4paper,			% tamanho do papel. 
+	a4paper,			% tamanho do papel.
 	% -- opções da classe abntex2 --
 	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
 	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
@@ -18,20 +18,20 @@
 % PACOTES
 % ------------------------------------
 
-% Pacotes fundamentais 
+% Pacotes fundamentais
 \usepackage{lmodern}			% Usa a fonte Latin Modern
 \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
-\usepackage{microtype} 
+\usepackage{microtype}
 % para melhorias de justificação
-\usepackage{IFSPSBV} 				% fomato específico relatório IFSULDEMINAS 
+\usepackage{IFSPSBV} 				% fomato específico relatório IFSULDEMINAS
 % Pacotes adicionais, usados no anexo do modelo de folha de identificação
 \usepackage{multicol}
 \usepackage{multirow}
-	
+
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 \usepackage{lipsum}				% para geração de dummy text
 
@@ -79,11 +79,11 @@
 \makeatletter
 \hypersetup{
      	%pagebackref=true,
-		pdftitle={\@title}, 
+		pdftitle={\@title},
 		pdfauthor={\@author},
     	pdfsubject={\imprimirpreambulo},
 	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, 
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico},
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=blue,          	% color of internal links
     	citecolor=blue,        		% color of links to bibliography
@@ -93,7 +93,7 @@
 }
 \makeatother
 
-% Espaçamentos entre linhas e parágrafos 
+% Espaçamentos entre linhas e parágrafos
 
 % O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
@@ -112,7 +112,7 @@
 \selectlanguage{brazil}
 
 % Retira espaço extra obsoleto entre as frases.
-\frenchspacing 
+\frenchspacing
 
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
@@ -135,16 +135,9 @@
 
 \input{textos/introducao.tex}
 
-\input{textos/referencial_teorico.tex}
-
 \input{textos/metodologia.tex}
 
-\input{textos/desenvolvimento.tex}
-
 \input{textos/conclusoes.tex}
-
-
-
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
