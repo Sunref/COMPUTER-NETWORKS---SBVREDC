@@ -1,0 +1,6 @@
+services:
+  nginx:
+    env_file:
+      - ../config/.env
+    enviroment:
+      - NGINX_PORT=${NGINX_PORT}
