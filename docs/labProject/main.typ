@@ -2,7 +2,7 @@
 
 #show: article.with(
   title: [Implementação e Configuração de um Ambiente Web Integrado],
-  subtitle: "Abordagem Prática com SGBD, Tomcat, Apache e Aplicações Open Source",
+  subtitle: "Abordagem Prática com SGBD, NGINX, Apache e Aplicações Open Source",
   // foreign-title: "Implementação e Configuração de um Ambiente Web Integrado: SGBD, Aplicação Java e Servidor HTTP em Rede Laboratorial",
   // foreign-subtitle: "Abordagem Prática com Tomcat, Apache e Aplicações Open Source",
   authors: (
