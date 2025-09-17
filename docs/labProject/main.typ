@@ -1,8 +1,8 @@
 #import "@preview/min-article:0.1.0": abbrev, abstract, acknowledgments, annex, appendix, article, figure, gloss
 
 #show: article.with(
-  title: [Web Environment Setup],
-  subtitle: "Practical Approach with DBMS, Tomcat, Apache, and Open Source Applications",
+  title: [Implementação e Configuração de um Ambiente Web Integrado],
+  subtitle: "Abordagem Prática com SGBD, Tomcat, Apache e Aplicações Open Source",
   // foreign-title: "Implementação e Configuração de um Ambiente Web Integrado: SGBD, Aplicação Java e Servidor HTTP em Rede Laboratorial",
   // foreign-subtitle: "Abordagem Prática com Tomcat, Apache e Aplicações Open Source",
   authors: (

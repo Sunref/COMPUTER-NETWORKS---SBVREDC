@@ -1,2 +1,5 @@
 .bkp/
 .bkp/*
+.vscode/
+server/.hide/*
+server/.hide/
