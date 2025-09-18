@@ -55,7 +55,7 @@
   Existem quatro tipos principais de SDN:
   
   #text[
-    *SDN aberta:* Protocolos públicos são usados como controle de dispositivos tanto físicos quanto virtuais, e são responsáveis pelo roteamento dos pacotes de dados.
+    • *SDN aberta:* Protocolos públicos são usados como controle de dispositivos tanto físicos quanto virtuais, e são responsáveis pelo roteamento dos pacotes de dados.
     
     • *SDN de API:* Nesses casos, geralmente a Southbound fica responsável pela organização e controle do fluxo para cada dispositivo.
     
