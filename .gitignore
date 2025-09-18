@@ -3,3 +3,6 @@
 .vscode/
 /.hide/*
 /.hide/
+
+# Dev Crumbs directory
+.devcrumbs
